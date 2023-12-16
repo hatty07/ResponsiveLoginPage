@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(9, 76%, 97%);
+}
+
+h2 {
+  font-family: sans;
+  letter-spacing: 1.5px;
+  font-size: 50px;
+  color: hsl(7, 86%, 62%);
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 1.2em 0 0;
+}
+
+.container {
+  margin: 5em;
+  background-color: #fff;
+  width: max-content;
+  height: max-content;
+  float: right;
+  padding: 1em 2em;
+}
+
+.header {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.sub-header {
+  color: hsl(222, 14%, 82%);
+}
+
+.two-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn1:hover,.btn2:hover {
+  cursor: pointer;
+  background: hsla(222, 14%, 82%, 0.888);
+}
+
+.btn1 {
+  padding: 8px 52px;
+  background: transparent;
+  border: 1px solid hsl(222, 14%, 82%);
+  margin: 25px 10px 0 0;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.btn2 {
+  padding: 8px 55px;
+  background: transparent;
+  border: 1px solid hsl(222, 14%, 82%);
+  margin: 25px 0 0 0;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.lineBreak {
+  margin: 1em 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  color: hsl(222, 14%, 82%);
+  font-size: 10px;
+}
+
+.horizontal-line {
+  width: 35%;
+  border-top: 1px solid hsl(222, 14%, 82%);
+  margin: 5px 1px 10px 0;
+}
+.horizontal-line2 {
+  width: 35%;
+  border-top: 1px solid hsl(222, 14%, 82%);
+  margin: 5px 0 10px 1px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+#name,#email,#password {
+  padding: 0.5em;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: hsl(222, 14%, 82%);
+}
+
+
+.terms {
+  margin: 10px 0;
+}
+
+#cbox {
+  cursor: pointer;
+}
+
+.btn3 {
+  margin-top: 10px;
+  width: 100%;
+  padding: 0.6em 0;
+  background-color: hsl(7, 86%, 62%);
+  border: none;
+}
+
+.btn3:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: hsla(7, 86%, 62%, 0.923);
+}
+
+.designs {
+  position: relative;
+}
+
+.design1 {
+  position: absolute;
+  clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+  background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%, #f2f4f9 90%);
+  width: 20em;
+  height: 70vh;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+  margin-top: -12em;
+  margin-left: 10em;
+  padding: 50px;
+}
+
+.design2 {
+  position: absolute;
+  clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+  background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+  width: 10em;
+  height: 50vh;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  margin-top: 3em;
+  margin-left: -2em;
+  padding: 50px;
+}
+
+.design3 {
+  position: absolute;
+  clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+  background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+  width: 20em;
+  height: 70vh;
+  border-radius: 50%;
+  transform: rotate(140deg);
+  margin-top: 19em;
+  margin-left: 25em;
+  padding: 50px;
+}
+
+.design4 {
+  position: absolute;
+  clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+  background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+  width: 18em;
+  height: 70vh;
+  border-radius: 50%;
+  transform: rotate(140deg);
+  margin-top: 19em;
+  margin-left: -7em;
+  padding: 50px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
+  .designs {
+    position: relative;
+  }
+  .design1 {
+    display: none;
+  }
+  .design2 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+    width: 10em;
+    height: 40vh;
+    border-radius: 50%;
+    transform: rotate(-135deg);
+    margin-top: -10em;
+    margin-left: -4em;
+    padding: 50px;
+  }
+  .design3 {
+    display: none;
+  }
+  .design4 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+    width: 18em;
+    height: 70vh;
+    border-radius: 50%;
+    transform: rotate(140deg);
+    margin-top: 30em;
+    margin-left: -7em;
+    padding: 50px;
+  }
+  .container {
+    margin: 5em auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    overflow: hidden;
+  }
+  .designs {
+    position: relative;
+  }
+  
+  .design1 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 80% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%, #f2f4f9 90%);
+    width: 15em;
+    height: 70vh;
+    transform: rotate(-45deg);
+    margin-top: -11em;
+    margin-left: -8em;
+    padding: 50px;
+  }
+  
+  
+  .design2 {
+    display: none;
+  }
+  
+  .design3 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+    width: 20em;
+    height: 70vh;
+    border-radius: 50%;
+    transform: rotate(140deg);
+    margin-top: 25em;
+    margin-left: -2em;
+    padding: 50px;
+  }
+  
+  .design4 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  body {
+    overflow: hidden;
+  }
+  .design1 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 80% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%, #f2f4f9 90%);
+    width: 20em;
+    height: 70vh;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    margin-top: -11em;
+    margin-left: 5em;
+    padding: 50px;
+  }
+  .design3 {
+    position: absolute;
+    clip-path: polygon(23% 0, 82% 0, 82% 100%, 22% 100%);
+    background: linear-gradient(to top, #f6664b 20%, #b97697 50%, #8085e0 70%);
+    width: 20em;
+    height: 70vh;
+    border-radius: 50%;
+    transform: rotate(140deg);
+    margin-top: 19em;
+    margin-left: 10em;
+    padding: 50px;
+  }
+}
